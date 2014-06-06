@@ -67,8 +67,10 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
         var indexPathTemp: NSIndexPath = sender as NSIndexPath
         println("index row is \(indexPathTemp.row)")
+        var tempBean: RootBean = arrTotal[indexPathTemp.row] as RootBean
+        
         var viewControllerDetail: DetailViewController = segue!.destinationViewController as DetailViewController
-        viewControllerDetail.strName = "hello"
+        viewControllerDetail.strName = tempBean.beanDes
     }
     
 

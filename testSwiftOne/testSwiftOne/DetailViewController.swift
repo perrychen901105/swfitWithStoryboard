@@ -14,7 +14,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.navigationController.navigationItem.title = strName
+        self.navigationItem.title = strName
+        
+        
         println("strName is \(strName)")
     }
     
